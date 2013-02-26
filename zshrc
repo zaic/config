@@ -26,7 +26,7 @@ alias -g W=' | wc '
 #alias -s c=vim
 #alias -s h=vim
 #alias -s conf=vim
-#alias -s exe=wine
+alias -s exe=wine
 
 setopt autocd
 

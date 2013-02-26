@@ -44,6 +44,7 @@ const int inf = 0x3f3f3f3f;
 const int64 inf64 = 0x3f3f3f3f3f3f3f3fLL;
 const real eps = 1e-8;
 const real pi = acos(-1.0);
+const int dir[4][2] = { {0, 1}, {1, 0}, {0, -1}, {-1, 0} };
 
 
 
