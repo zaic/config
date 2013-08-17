@@ -2,18 +2,30 @@
 syntax on
 colorscheme elflord
 
-set number
-set ts=4 sts=4 sw=4 ci 
-set autoindent
-set cindent
-set nowrap
-set wrap
-set cursorline
+set number              " show lines numbers
+set expandtab           " using spaces instead of tabs
+set ts=4 sts=4 sw=4 ci  " set tabulation to 4 spaces
+set autoindent          " more indent
+set cindent             " more and more indent
+set wrap                " enable lines wrapping
+set so:10               " set 10 lines to the cursor when scrolling up/down
+set ruler               " alway show current cursor position
+set wildmenu            " show wild menu (autocompletion for commands)
+set hlsearch            " highlight _all_ search result
+set laststatus:2
+set cursorline          " highlight cursorline
 :hi CursorLine   cterm=NONE ctermbg=blue ctermfg=NONE
 
-" c
+map <C-Down>  <C-W>j
+map <C-Up>    <C-W>k
+map <C-Left>  <C-W>h
+map <C-RIght> <C-W>l
+
+" c/c++ autoreplace
 imap {<CR> {<CR>}<Esc>O
 imap itn int
+
+
 
 " acm
 " codeforces
