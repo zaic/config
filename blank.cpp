@@ -1,28 +1,15 @@
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <cassert>
-#include <cmath>
-#include <ctime>
-
-#include <string>
-#include <sstream>
-#include <algorithm>
-#include <iostream>
-#include <vector>
-#include <list>
-#include <set>
-#include <map>
-#include <queue>
-
+#include <bits/stdc++.h>
+#define real REal
 using namespace std;
 
 #ifdef ILIKEGENTOO
-#define Eo(x) { cerr << #x << " = " << (x) << endl; }
-#define E(x) { cerr << #x << " = " << (x) << "   "; }
+#   define Eo(x) { cerr << #x << " = " << (x) << endl; }
+#   define E(x) { cerr << #x << " = " << (x) << "   "; }
+#   define FREOPEN(x)
 #else
-#define Eo(x)
-#define E(x)
+#   define Eo(x)
+#   define E(x)
+#   define FREOPEN(x) (void)freopen(x ".in", "r", stdin);(void)freopen(x ".out", "w", stdout);
 #endif
 #define EO(x) Eo(x)
 #if defined ILIKEGENTOO || !(defined __GXX_EXPERIMENTAL_CXX0X__)
@@ -33,7 +20,13 @@ template<typename T, size_t N> struct array { T val[N]; T& operator[](size_t n) 
 #define Sz(x) (int((x).size()))
 #define All(x) (x).begin(),(x).end()
 
-template<typename A, typename B> ostream& operator<<(ostream& os, const pair<A, B>& p) { return os << '(' << p.first << ", " << p.second << ')'; }
+template<class A, class B> ostream &operator<<(ostream &os, const pair<A, B>& p) { return os << '(' << p.first << ", " << p.second << ')'; }
+
+template<class C> void operator<<(vector<C> &v, const C &x){v.push_back(x);}
+template<class D> void operator>>(vector<D> &v, D &x){assert(!v.empty()); x=v.back(); v.pop_back();}
+template<class E> void operator<<(set<E> &v, const E &x){v.insert(x);}
+template<class F> void operator<<(queue<F> &c, const F& v){v.push(v);}
+template<class G> void operator>>(queue<G> &c, const G& v){const G r=v.front();v.pop();return r;}
 
 typedef double real;
 typedef long long int64;
@@ -48,10 +41,8 @@ const int dir[4][2] = { {0, 1}, {1, 0}, {0, -1}, {-1, 0} };
 
 
 
-#define TNAME ""
 int main() {
-	assert(freopen(TNAME".in", "r", stdin));
-	assert(freopen(TNAME".out", "w", stdout));
+    FREOPEN("__TNAME__");
 	ios_base::sync_with_stdio(false);
 
 	return 0;
