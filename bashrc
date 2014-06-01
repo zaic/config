@@ -5,6 +5,8 @@ alias l='ls -l'
 alias ll='l -a'
 alias s='cd ..'
 
+alias up='emerge -avuDN --keep-going -j1 @world'
+
 # rebooooot :D
 function command_not_found_handle () {
         if  echo $1 | egrep '^rebo+t$' > /dev/null ; then
