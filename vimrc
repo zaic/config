@@ -35,7 +35,7 @@ imap <F5> <ESC><F5>
 imap <F6> <ESC><F6>
 
 function! SetOlymp()
-    r ~zaic/config/blank.cpp
+    r /storage/config/blank.cpp
     1delete
     %s/__TNAME__/\=expand("%:r")/
 endfunction
