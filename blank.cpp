@@ -38,7 +38,7 @@ const int dir[4][2] = { {0, 1}, {1, 0}, {0, -1}, {-1, 0} };
 int main() {
     // static_assert(sizeof(long) == 8, "32-bit !!! :'(");
     // FREOPEN("__TNAME__");
-	ios_base::sync_with_stdio(false);
+    ios_base::sync_with_stdio(false);
 
-	return 0;
+    return 0;
 }
