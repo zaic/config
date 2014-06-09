@@ -25,7 +25,7 @@ template<class G> void operator>>(queue<G> &c, const G& v){const G r=v.front();v
 typedef double flt;
 typedef long long int64;
 typedef unsigned long long uint64;
-typedef pair<int, int> pip;
+typedef pair<int, int> pii;
 
 const int inf = 0x3f3f3f3f;
 const int64 inf64 = 0x3f3f3f3f3f3f3f3fLL;
