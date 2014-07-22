@@ -20,7 +20,7 @@ alias grep='grep --color=auto'
 
 alias -g L=' | less '
 alias -g G=' | grep '
-alias -g W=' | wc '
+alias -g W=' | wc -l'
 
 #alias -s cpp=vim
 #alias -s c=vim
