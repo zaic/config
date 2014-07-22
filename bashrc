@@ -5,7 +5,7 @@ alias l='ls -l'
 alias ll='l -a'
 alias s='cd ..'
 
-alias up='emerge -avuDN --keep-going -j1 -q @world'
+alias up='MAKEOPTS="-j1" emerge -avuDN --keep-going -j1 -q @world'
 
 # rebooooot :D
 function command_not_found_handle () {

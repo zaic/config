@@ -22,6 +22,7 @@ map <C-Left>  <C-W>h
 map <C-RIght> <C-W>l
 
 " c/c++ autoreplace
+imap <C-N> <C-X><C-U>
 imap {<CR> {<CR>}<Esc>O
 iabbrev itn int
 
