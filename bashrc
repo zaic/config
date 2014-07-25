@@ -7,6 +7,8 @@ alias s='cd ..'
 
 alias up='MAKEOPTS="-j1" emerge -avuDN --keep-going -j1 -q @world'
 
+alias htop='htop -d5'
+
 # rebooooot :D
 function command_not_found_handle () {
         if  echo $1 | egrep '^rebo+t$' > /dev/null ; then
